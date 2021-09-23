@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light  border-bottom"><div class="mx-auto" style="width: 300px;"></div>
 
 	<div class="container-fluid ">
-	  <p>Hi! <a href="https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2F">Sign in </a> or <a href="https://signup.ebay.com/pa/crte?ru=https%3A%2F%2Fwww.ebay.com%2F">register </a> </p>
+	  <p>Hi! <a routerLink="signin">Sign in </a> or <a routerLink="register">register </a> </p>
 	  
 	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -16,13 +16,13 @@
 			<a class="nav-link active text-black mb-2" aria-current="page" href="#">Brand Outlet</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link active text-black mb-2" aria-current="page" href="#">Help & Contact</a>
+			<a class="nav-link active text-black mb-2" aria-current="page" routerLink="Help & Contact">Help & Contact</a>
 		
 
 		</ul >
 		
 
-			<a class="nav-link active text-black" aria-current="page" href="#">Sell</a>
+			<a class="nav-link active text-black" aria-current="page" routerLink="sell">Sell</a>
 		
 		
 		<div class="dropdown">
@@ -30,7 +30,7 @@
 			  Watchlist
 			</button>
 			<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-			  <li><button class="dropdown-item " type="button"><h4 class="text-secondary">Please <a class="text-black"href="#">Sign in </a> to view items you are watching.</h4></button></li>
+			  <li><button class="dropdown-item " type="button"><h4 class="text-secondary">Please <a class="text-black"routerLink="signin">Sign in </a> to view items you are watching.</h4></button></li>
 			  
 			</ul>
 		  </div>
