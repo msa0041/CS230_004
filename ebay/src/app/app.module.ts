@@ -24,6 +24,7 @@ import { BuyComponent } from './body/buy.component';
 import { UnderNavbarComponent } from './dailyDeals/under-navbar.component';
 import { ItemsOnSaleComponent } from './dailyDeals/items-on-sale.component';
 import { PurchasItemsDailyComponent } from './dailyDeals/purchas-items-daily.component';
+import { ItemsComponent } from './header/items.component';
 
 
 
@@ -51,7 +52,8 @@ import { PurchasItemsDailyComponent } from './dailyDeals/purchas-items-daily.com
     BuyComponent,
     UnderNavbarComponent,
     ItemsOnSaleComponent,
-    PurchasItemsDailyComponent
+    PurchasItemsDailyComponent,
+    ItemsComponent
 
   ],
   imports: [
