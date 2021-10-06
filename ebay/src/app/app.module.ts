@@ -25,6 +25,8 @@ import { UnderNavbarComponent } from './dailyDeals/under-navbar.component';
 import { ItemsOnSaleComponent } from './dailyDeals/items-on-sale.component';
 import { PurchasItemsDailyComponent } from './dailyDeals/purchas-items-daily.component';
 import { ItemsComponent } from './header/items.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 
 
@@ -53,12 +55,15 @@ import { ItemsComponent } from './header/items.component';
     UnderNavbarComponent,
     ItemsOnSaleComponent,
     PurchasItemsDailyComponent,
-    ItemsComponent
+    ItemsComponent,
+    UserInfoComponent
+
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
