@@ -22,9 +22,12 @@
 		  </li>
 		  <li class="nav-item">
 			<nav class="navbar navbar-light ">
+				
 				<div class="container-fluid">
-				  <form class="d-flex">
-					<input class="form-control me-2 col-12" type="search" placeholder="Search for anything" aria-label="Search">
+					
+				  <form class="d-flex"#postForm="ngForm" (ngSubmit)="search(postForm.value)">
+					
+					<input class="form-control me-2 col-12" type="search" placeholder="Search for anything" aria-label="Search"ngModel name="thing">
 					<div class="dropdown">
 						<button class="btn btn-white dropdown-toggle text-secondary " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 						 All Categories
@@ -52,7 +55,8 @@
 					  </div>
 					<button class="btn btn-primary col-4" type="submit">Search</button> 
 					<a style="font-size: 11px ;" class="nav-link active text-secondary mb-2" aria-current="page" href="#">Advanced</a>
-				  </form>
+					</form>
+				  
 				</div>
 			  </nav>
 		  </li>

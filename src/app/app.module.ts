@@ -27,6 +27,7 @@ import { PurchasItemsDailyComponent } from './dailyDeals/purchas-items-daily.com
 import { ItemsComponent } from './header/items.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -63,7 +64,8 @@ import { UserInfoComponent } from './header/user-info.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

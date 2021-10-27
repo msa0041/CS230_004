@@ -25,7 +25,14 @@ export class HomeComponent  implements OnInit{
        this.items.push(new Item(data[item]));
         
       }
+      //this.itemsService.modifyItems().subscribe(data=>{
+      //  console.log(data);
+      //})
     })
+
+
+
+
    // send get request from server and get response 
     // for(var item of mock_items){
     //   this.items.push(new Item(item))

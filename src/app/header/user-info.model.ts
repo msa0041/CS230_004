@@ -5,3 +5,10 @@ export interface UserInfo {
     mix_id: string;
 
 }
+// export interface Register {
+//     FirstName: string;
+//     LastName: string;
+//     Email: string;
+//     Password: string;
+
+// }

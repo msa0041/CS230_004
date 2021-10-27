@@ -12,11 +12,15 @@ myInfo: UserInfo | undefined;
 constructor(private http: HttpClient){
 
 }
+
     ngOnInit(): void {
         console.log("Sending a get request to the server");
         this.getUserInfo();
         console.log("Registering showUserInfo as a subscriber");
         this.showUserInfo();
+        
+        
+        
 
     }
 getUserInfo(){

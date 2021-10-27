@@ -1,14 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { Item, Register } from './items.model';
+import { ItemsService } from './items.service';
 
 @Component({
   selector: 'app-register',
   templateUrl: 'register.component.html',
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent  {
 
-  constructor() { }
+  constructor(private registerService: ItemsService) { }
 
-  ngOnInit(): void {
+  onAddRegister(data:Register){
+    
+    console.log("you pressed a buttun");
+    this.registerService.addAccount(data).subscribe(data =>{
+      console.log("Create an account");
+    })
   }
-
 }
+

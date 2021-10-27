@@ -13,3 +13,26 @@ export class Item {
             this.imagePath = imagePath;
         } 
 }
+export class Register{
+    FirstName: string;
+    LastName: string;
+    Email: string;
+    Password: string;
+
+    constructor({FirstName, LastName, Email, Password} :
+        {FirstName:string, LastName:string, Email:string, Password:string}) {
+            this.FirstName = FirstName;
+            this.LastName = LastName;
+            this.Email = Email;
+            this.Password = Password;
+        } 
+}
+export class searchBar{
+    thing: string;
+   
+
+    constructor({thing} :
+        {thing:string}) {
+            this.thing = thing;
+        } 
+}
