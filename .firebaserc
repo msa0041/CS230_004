@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ebay-app-004": {
+      "hosting": {
+        "ebay": [
+          "ebay-app-004"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ebay-app-004"
+  }
+}

@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { DatabaseService } from './database.service';
 import { Item, Register } from './items.model';
 import { ItemsService } from './items.service';
 
@@ -8,7 +9,9 @@ import { ItemsService } from './items.service';
 })
 export class RegisterComponent  {
 
-  constructor(private registerService: ItemsService) { }
+  constructor(private registerService: ItemsService, private dbService:DatabaseService) { 
+    dbService.showData();
+  }
 
   onAddRegister(data:Register){
     
