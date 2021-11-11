@@ -1,2 +1,33 @@
-<p>signin works!</p>
+<a class="navbar-brand" routerLink="">
+    <img src="./assets/ebayImage.png" alt="" width="115" height="45">
+  </a>
 
+  <h2 class="text-center"> Hello</h2>
+  <p class="text-center"> Sign in to ebay or <a routerLink="Register">create an account</a></p>
+
+  <div class="container mx-auto">
+    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+  <div class="row mt-3">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <div class="form-floating ">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="email" required email>
+            <label for="floatingInput"class="text-secondary">Email</label>
+          </div>
+
+          <div class="form-floating mt-3">
+            <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="password" required password minlength="5">
+            <label for="floatingInput"class="text-secondary">Password</label>
+          </div>
+
+          <button class="btn btn-primary btn-lg col-12 mt-3" type="submit" [disabled]="!authForm.valid"(click)="buttonClicked='Login'">login</button>
+          
+    </div>
+
+
+    <div class="col-4"></div>
+    </div>
+  </form>
+    </div>
+
+    

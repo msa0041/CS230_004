@@ -36,6 +36,7 @@ import {AngularFireModule} from '@angular/fire/compat'
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +62,8 @@ import {AngularFireModule} from '@angular/fire/compat'
     ItemsOnSaleComponent,
     PurchasItemsDailyComponent,
     ItemsComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    
 
 
   ],

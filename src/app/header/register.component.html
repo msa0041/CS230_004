@@ -16,7 +16,7 @@
           </svg></p>
 
     <div class= "container">
-        <form #postForm="ngForm" (ngSubmit)="onAddRegister(postForm.value)">
+        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
     <div class="row">
     <div class="col-2">
 
@@ -38,7 +38,7 @@
     <div class="row mt-3">
         <div class="col-4">
             <div class="form-floating ">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="Email">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="email" required email>
                 <label for="floatingInput"class="text-secondary">Email</label>
               </div>
         </div>
@@ -47,7 +47,7 @@
         <div class="row mt-3">
             <div class="col-4">
                 <div class="form-floating ">
-                    <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="Password">
+                    <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com"ngModel name="password" required password minlength="5">
                     <label for="floatingInput"class="text-secondary">Password</label>
                   </div>
             </div>
@@ -63,16 +63,10 @@
             <div class="col-4 mt-3">
                 <div class="d-grid gap-2 col-12 mx-auto">
                     
-                    <button class="btn btn-primary btn-lg" type="submit">Create account</button>
+                    <button class="btn btn-primary btn-lg" type="submit" [disabled]="!authForm.valid"(click)="buttonClicked='SignUp'">Create account</button>
+                   <!-- <button class="btn btn-primary btn-lg" type="submit" [disabled]="!authForm.valid"(click)="buttonClicked='Login'">login</button> --> 
                   </div>
             </div>
-       
-
-    
-
-
-
-
     </div>
 
     <div class="col text-center">

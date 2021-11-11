@@ -12,6 +12,7 @@ import {DailyDealsComponent} from './body/daily-deals.component';
 import {BrandOutletComponent} from './body/brand-outlet.component';
 import {BuyComponent} from './body/buy.component';
 
+
 const routes: Routes = [
   {path: 'Sell', component: SellComponent },
   {path: 'Signin', component: SigninComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'Daily Deals', component: DailyDealsComponent },
   {path: 'Brand Outlet', component: BrandOutletComponent },
   {path: 'Buy', component: BuyComponent },
+
 
 ]
 
